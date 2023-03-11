@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +14,6 @@
   <link rel="stylesheet" href="assets/CSS/app.css">
   <title>Frontend Mentor | Password generator app</title>
 </head>
-
 <body>
   <div class="container">
     <header>
@@ -36,7 +34,7 @@
               <label for="length">Character Length</label>
               <output name="result" for="length" id="result">0</output>
             </div>
-            <input type="range" name="length" id="length" min="0" max="20" value="0">
+            <input type="range" name="length" id="length" min="1" max="20" value="0">
           </div>
           <div class="passwordChar">
             <label for="uppercase" class="myCheck">
@@ -44,19 +42,16 @@
               Include Uppercase Letters
               <span class="check"></span>
             </label>
-
             <label for="lowercase" class="myCheck">
               <input type="checkbox" id="lowercase">
               Include Lowercase Letters
               <span class="check"></span>
             </label>
-
             <label for="numbers" class="myCheck">
               <input type="checkbox" id="numbers">
               Include Numbers
               <span class="check"></span>
             </label>
-
             <label for="symbols" class="myCheck">
               <input type="checkbox" id="symbols">
               Include Symbols
@@ -64,7 +59,7 @@
             </label>
           </div>
           <div class="btn">
-            <button onclick="generatePassword()" id="btn" type="button" disabled="disabled">Generate <img src="assets/images/icon-arrow-right.svg"
+            <button id="btn" type="button" >Generate <img src="assets/images/icon-arrow-right.svg"
                 alt="arrow right">
             </button>
           </div>
@@ -74,5 +69,4 @@
   </div>
   <script src="assets/JS/app.js"></script>
 </body>
-
 </html>
